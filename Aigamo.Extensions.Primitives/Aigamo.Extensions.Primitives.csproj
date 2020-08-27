@@ -11,4 +11,12 @@
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\Aigamo\source\repos\Aigamo.Extensions.Primitives\Aigamo.Extensions.Primitives\Aigamo.Extensions.Primitives.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Aigamo\source\repos\Aigamo.Extensions.Primitives\Aigamo.Extensions.Primitives\Aigamo.Extensions.Primitives.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>

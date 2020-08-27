@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Aigamo.Extensions.Primitives</name>
+    </assembly>
+    <members>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowByte(System.UInt16)">
+            <summary>
+            Retrieves the low-order byte from the given 16-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the low-order byte of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowByte(System.Int16)">
+            <summary>
+            Retrieves the low-order byte from the given 16-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the low-order byte of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowUInt16(System.UInt32)">
+            <summary>
+            Retrieves the low-order 16-bit unsigned integer from the given 32-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the low-order 16-bit unsigned integer of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowUInt16(System.Int32)">
+            <summary>
+            Retrieves the low-order 16-bit unsigned integer from the given 32-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the low-order 16-bit unsigned integer of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowUInt32(System.UInt64)">
+            <summary>
+            Retrieves the low-order 32-bit unsigned integer from the given 64-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the low-order 32-bit unsigned integer of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowUInt32(System.Int64)">
+            <summary>
+            Retrieves the low-order 32-bit unsigned integer from the given 64-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the low-order 32-bit unsigned integer of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighByte(System.UInt16)">
+            <summary>
+            Retrieves the high-order byte from the given 16-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the high-order byte of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighByte(System.Int16)">
+            <summary>
+            Retrieves the high-order byte from the given 16-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the high-order byte of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighUInt16(System.UInt32)">
+            <summary>
+            Retrieves the high-order 16-bit unsigned integer from the given 32-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the high-order 16-bit unsigned integer of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighUInt16(System.Int32)">
+            <summary>
+            Retrieves the high-order 16-bit unsigned integer from the given 32-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the high-order 16-bit unsigned integer of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighUInt32(System.UInt64)">
+            <summary>
+            Retrieves the high-order 32-bit unsigned integer from the given 64-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the high-order 32-bit unsigned integer of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighUInt32(System.Int64)">
+            <summary>
+            Retrieves the high-order 32-bit unsigned integer from the given 64-bit value.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is the high-order 32-bit unsigned integer of the specified value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithLowByte(System.UInt16,System.Byte)">
+            <summary>
+            Joins two byte values and creates a 16-bit unsigned integer value.
+            </summary>
+            <param name="value">The higher part value to be joined.</param>
+            <param name="low">The lower part value to be joined.</param>
+            <returns>return value is a 16-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithLowByte(System.Int16,System.Byte)">
+            <summary>
+            Joins two byte values and creates a 16-bit signed integer value.
+            </summary>
+            <param name="value">The higher part value to be joined.</param>
+            <param name="low">The lower part value to be joined.</param>
+            <returns>return value is a 16-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithLowUInt16(System.UInt32,System.UInt16)">
+            <summary>
+            Joins two 16-bit unsigned integer values and creates a 32-bit unsigned integer value.
+            </summary>
+            <param name="value">The higher part value to be joined.</param>
+            <param name="low">The lower part value to be joined.</param>
+            <returns>return value is a 32-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithLowUInt16(System.Int32,System.UInt16)">
+            <summary>
+            Joins two 16-bit unsigned integer values and creates a 32-bit signed integer value.
+            </summary>
+            <param name="value">The higher part value to be joined.</param>
+            <param name="low">The lower part value to be joined.</param>
+            <returns>return value is a 32-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithLowUInt32(System.UInt64,System.UInt32)">
+            <summary>
+            Joins two 32-bit unsigned integer values and creates a 64-bit unsigned integer value.
+            </summary>
+            <param name="value">The higher part value to be joined.</param>
+            <param name="low">The lower part value to be joined.</param>
+            <returns>return value is a 64-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithLowUInt32(System.Int64,System.UInt32)">
+            <summary>
+            Joins two 32-bit unsigned integer values and creates a 64-bit signed integer value.
+            </summary>
+            <param name="value">The higher part value to be joined.</param>
+            <param name="low">The lower part value to be joined.</param>
+            <returns>return value is a 64-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithHighByte(System.UInt16,System.Byte)">
+            <summary>
+            Joins two byte values and creates a 16-bit unsigned integer value.
+            </summary>
+            <param name="value">The lower part value to be joined.</param>
+            <param name="high">The higher part value to be joined.</param>
+            <returns>return value is a 16-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithHighByte(System.Int16,System.Byte)">
+            <summary>
+            Joins two byte values and creates a 16-bit signed integer value.
+            </summary>
+            <param name="value">The lower part value to be joined.</param>
+            <param name="high">The higher part value to be joined.</param>
+            <returns>return value is a 16-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithHighUInt16(System.UInt32,System.UInt16)">
+            <summary>
+            Joins two 16-bit unsigned integer values and creates a 32-bit unsigned integer value.
+            </summary>
+            <param name="value">The lower part value to be joined.</param>
+            <param name="high">The higher part value to be joined.</param>
+            <returns>return value is a 32-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithHighUInt16(System.Int32,System.UInt16)">
+            <summary>
+            Joins two 16-bit unsigned integer values and creates a 32-bit signed integer value.
+            </summary>
+            <param name="value">The lower part value to be joined.</param>
+            <param name="high">The higher part value to be joined.</param>
+            <returns>return value is a 32-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithHighUInt32(System.UInt64,System.UInt32)">
+            <summary>
+            Joins two 32-bit unsigned integer values and creates a 64-bit unsigned integer value.
+            </summary>
+            <param name="value">The lower part value to be joined.</param>
+            <param name="high">The higher part value to be joined.</param>
+            <returns>return value is a 64-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithHighUInt32(System.Int64,System.UInt32)">
+            <summary>
+            Joins two 32-bit unsigned integer values and creates a 64-bit signed integer value.
+            </summary>
+            <param name="value">The lower part value to be joined.</param>
+            <param name="high">The higher part value to be joined.</param>
+            <returns>return value is a 64-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt16(System.ValueTuple{System.Byte,System.Byte})">
+            <summary>
+            Creates a 16-bit unsigned integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 16-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt16(System.ValueTuple{System.Byte,System.Byte})">
+            <summary>
+            Creates a 16-bit signed integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 16-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt32(System.ValueTuple{System.UInt16,System.UInt16})">
+            <summary>
+            Creates a 32-bit unsigned integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 32-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt32(System.ValueTuple{System.UInt16,System.UInt16})">
+            <summary>
+            Creates a 32-bit signed integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 32-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt64(System.ValueTuple{System.UInt32,System.UInt32})">
+            <summary>
+            Creates a 64-bit unsigned integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 64-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt64(System.ValueTuple{System.UInt32,System.UInt32})">
+            <summary>
+            Creates a 64-bit signed integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 64-bit signed integer value.</returns>
+        </member>
+    </members>
+</doc>
