@@ -9,6 +9,7 @@
 	<PackageProjectUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</RepositoryUrl>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<Description>Aigamo.Extensions.Primitives.BitExtensions</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
