@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-	<LangVersion>preview</LangVersion>
-	<Nullable>enable</Nullable>
-	<Authors>ycanardeau</Authors>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<PackageProjectUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</RepositoryUrl>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Description>Aigamo.Extensions.Primitives.BitExtensions</Description>
-	<Version>1.0.1</Version>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+    <Authors>ycanardeau</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Aigamo.Extensions.Primitives.BitExtensions</Description>
+    <Version>1.0.1</Version>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
