@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Aigamo.Extensions.Primitives.Tests/Aigamo.Extensions.Primitives.Tests.csproj" />
+  <Project Path="Aigamo.Extensions.Primitives/Aigamo.Extensions.Primitives.csproj" />
+</Solution>
