@@ -11,8 +11,8 @@ public class BitExtensionsTests
 	[InlineData(0xFFFF, 0xFF)]
 	public void LowByte(ushort value, byte expected)
 	{
-		Assert.Equal(expected, value.LowByte());
-		Assert.Equal(expected, ((short)value).LowByte());
+		Assert.Equal(expected, value.LowByte);
+		Assert.Equal(expected, ((short)value).LowByte);
 	}
 
 	[Theory]
@@ -22,8 +22,8 @@ public class BitExtensionsTests
 	[InlineData(0xFFFFFFFF, 0xFFFF)]
 	public void LowUInt16(uint value, ushort expected)
 	{
-		Assert.Equal(expected, value.LowUInt16());
-		Assert.Equal(expected, ((int)value).LowUInt16());
+		Assert.Equal(expected, value.LowUInt16);
+		Assert.Equal(expected, ((int)value).LowUInt16);
 	}
 
 	[Theory]
@@ -38,8 +38,8 @@ public class BitExtensionsTests
 	)]
 	public void LowUInt32(ulong value, uint expected)
 	{
-		Assert.Equal(expected, value.LowUInt32());
-		Assert.Equal(expected, ((long)value).LowUInt32());
+		Assert.Equal(expected, value.LowUInt32);
+		Assert.Equal(expected, ((long)value).LowUInt32);
 	}
 
 	[Theory]
@@ -49,8 +49,8 @@ public class BitExtensionsTests
 	[InlineData(0xFFFF, 0xFF)]
 	public void HighByte(ushort value, byte expected)
 	{
-		Assert.Equal(expected, value.HighByte());
-		Assert.Equal(expected, ((short)value).HighByte());
+		Assert.Equal(expected, value.HighByte);
+		Assert.Equal(expected, ((short)value).HighByte);
 	}
 
 	[Theory]
@@ -60,8 +60,8 @@ public class BitExtensionsTests
 	[InlineData(0xFFFFFFFF, 0xFFFF)]
 	public void HighUInt16(uint value, ushort expected)
 	{
-		Assert.Equal(expected, value.HighUInt16());
-		Assert.Equal(expected, ((int)value).HighUInt16());
+		Assert.Equal(expected, value.HighUInt16);
+		Assert.Equal(expected, ((int)value).HighUInt16);
 	}
 
 	[Theory]
@@ -76,8 +76,8 @@ public class BitExtensionsTests
 	)]
 	public void HighUInt32(ulong value, uint expected)
 	{
-		Assert.Equal(expected, value.HighUInt32());
-		Assert.Equal(expected, ((long)value).HighUInt32());
+		Assert.Equal(expected, value.HighUInt32);
+		Assert.Equal(expected, ((long)value).HighUInt32);
 	}
 
 	[Theory]
@@ -155,12 +155,12 @@ public class BitExtensionsTests
 	public void ToUInt16(byte low, byte high, ushort expected)
 	{
 		Assert.Equal(expected, (low, high).ToUInt16());
-		Assert.Equal(expected, (expected.LowByte(), expected.HighByte()).ToUInt16());
+		Assert.Equal(expected, (expected.LowByte, expected.HighByte).ToUInt16());
 
 		Assert.Equal((short)expected, (low, high).ToInt16());
 		Assert.Equal(
 			(short)expected,
-			(((short)expected).LowByte(), ((short)expected).HighByte()).ToInt16()
+			(((short)expected).LowByte, ((short)expected).HighByte).ToInt16()
 		);
 	}
 
@@ -173,12 +173,12 @@ public class BitExtensionsTests
 	public void ToUInt32(ushort low, ushort high, uint expected)
 	{
 		Assert.Equal(expected, (low, high).ToUInt32());
-		Assert.Equal(expected, (expected.LowUInt16(), expected.HighUInt16()).ToUInt32());
+		Assert.Equal(expected, (expected.LowUInt16, expected.HighUInt16).ToUInt32());
 
 		Assert.Equal((int)expected, (low, high).ToInt32());
 		Assert.Equal(
 			(int)expected,
-			(((int)expected).LowUInt16(), ((int)expected).HighUInt16()).ToInt32()
+			(((int)expected).LowUInt16, ((int)expected).HighUInt16).ToInt32()
 		);
 	}
 
@@ -196,12 +196,12 @@ public class BitExtensionsTests
 	public void ToUInt64(uint low, uint high, ulong expected)
 	{
 		Assert.Equal(expected, (low, high).ToUInt64());
-		Assert.Equal(expected, (expected.LowUInt32(), expected.HighUInt32()).ToUInt64());
+		Assert.Equal(expected, (expected.LowUInt32, expected.HighUInt32).ToUInt64());
 
 		Assert.Equal((long)expected, (low, high).ToInt64());
 		Assert.Equal(
 			(long)expected,
-			(((long)expected).LowUInt32(), ((long)expected).HighUInt32()).ToInt64()
+			(((long)expected).LowUInt32, ((long)expected).HighUInt32).ToInt64()
 		);
 	}
 }

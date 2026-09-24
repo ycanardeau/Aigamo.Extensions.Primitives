@@ -4,89 +4,41 @@
         <name>Aigamo.Extensions.Primitives</name>
     </assembly>
     <members>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowByte(System.UInt16)">
-            <summary>
-            Retrieves the low-order byte from the given 16-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the low-order byte of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_LowByte(System.UInt16)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$B7387B77E15A9DBF0D30EA969A07D0DD.LowByte"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowByte(System.Int16)">
-            <summary>
-            Retrieves the low-order byte from the given 16-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the low-order byte of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_HighByte(System.UInt16)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$B7387B77E15A9DBF0D30EA969A07D0DD.HighByte"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowUInt16(System.UInt32)">
-            <summary>
-            Retrieves the low-order 16-bit unsigned integer from the given 32-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the low-order 16-bit unsigned integer of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_LowByte(System.Int16)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$390DAE713F975834EF0C1ED2BEC2DBAC.LowByte"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowUInt16(System.Int32)">
-            <summary>
-            Retrieves the low-order 16-bit unsigned integer from the given 32-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the low-order 16-bit unsigned integer of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_HighByte(System.Int16)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$390DAE713F975834EF0C1ED2BEC2DBAC.HighByte"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowUInt32(System.UInt64)">
-            <summary>
-            Retrieves the low-order 32-bit unsigned integer from the given 64-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the low-order 32-bit unsigned integer of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_LowUInt16(System.UInt32)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$59D1B7AA0B822E2E4777E961258AA046.LowUInt16"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.LowUInt32(System.Int64)">
-            <summary>
-            Retrieves the low-order 32-bit unsigned integer from the given 64-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the low-order 32-bit unsigned integer of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_HighUInt16(System.UInt32)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$59D1B7AA0B822E2E4777E961258AA046.HighUInt16"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighByte(System.UInt16)">
-            <summary>
-            Retrieves the high-order byte from the given 16-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the high-order byte of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_LowUInt16(System.Int32)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$BA41CFE2B5EDAEB8C1B9062F59ED4D69.LowUInt16"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighByte(System.Int16)">
-            <summary>
-            Retrieves the high-order byte from the given 16-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the high-order byte of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_HighUInt16(System.Int32)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$BA41CFE2B5EDAEB8C1B9062F59ED4D69.HighUInt16"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighUInt16(System.UInt32)">
-            <summary>
-            Retrieves the high-order 16-bit unsigned integer from the given 32-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the high-order 16-bit unsigned integer of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_LowUInt32(System.UInt64)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$CC86B4FD6473E1534D8E28315C194AD4.LowUInt32"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighUInt16(System.Int32)">
-            <summary>
-            Retrieves the high-order 16-bit unsigned integer from the given 32-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the high-order 16-bit unsigned integer of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_HighUInt32(System.UInt64)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$CC86B4FD6473E1534D8E28315C194AD4.HighUInt32"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighUInt32(System.UInt64)">
-            <summary>
-            Retrieves the high-order 32-bit unsigned integer from the given 64-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the high-order 32-bit unsigned integer of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_LowUInt32(System.Int64)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$E8CA98ACBCAEE63BB261A3FD4AF31675.LowUInt32"/>
         </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.HighUInt32(System.Int64)">
-            <summary>
-            Retrieves the high-order 32-bit unsigned integer from the given 64-bit value.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is the high-order 32-bit unsigned integer of the specified value.</returns>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_HighUInt32(System.Int64)">
+            <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$E8CA98ACBCAEE63BB261A3FD4AF31675.HighUInt32"/>
         </member>
         <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithLowByte(System.UInt16,System.Byte)">
             <summary>
@@ -225,6 +177,96 @@
             </summary>
             <param name="value">The value to be converted.</param>
             <returns>The return value is a 64-bit signed integer value.</returns>
+        </member>
+        <member name="T:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$B7387B77E15A9DBF0D30EA969A07D0DD.&lt;M&gt;$B9BA073A668F04D5183D178A5F8E4B94">
+            <param name="value">The value to be converted.</param>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$B7387B77E15A9DBF0D30EA969A07D0DD.LowByte">
+            <summary>
+            Gets the low-order byte from the given 16-bit value.
+            </summary>
+            <value>The low-order byte of the specified value.</value>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$B7387B77E15A9DBF0D30EA969A07D0DD.HighByte">
+            <summary>
+            Gets the high-order byte from the given 16-bit value.
+            </summary>
+            <value>The high-order byte of the specified value.</value>
+        </member>
+        <member name="T:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$390DAE713F975834EF0C1ED2BEC2DBAC.&lt;M&gt;$87FD54393D74893D2E6B48B632E32C86">
+            <param name="value">The value to be converted.</param>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$390DAE713F975834EF0C1ED2BEC2DBAC.LowByte">
+            <summary>
+            Gets the low-order byte from the given 16-bit value.
+            </summary>
+            <value>The low-order byte of the specified value.</value>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$390DAE713F975834EF0C1ED2BEC2DBAC.HighByte">
+            <summary>
+            Gets the high-order byte from the given 16-bit value.
+            </summary>
+            <value>The high-order byte of the specified value.</value>
+        </member>
+        <member name="T:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$59D1B7AA0B822E2E4777E961258AA046.&lt;M&gt;$3319E6DC39318D47F4754E3E5D1966B1">
+            <param name="value">The value to be converted.</param>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$59D1B7AA0B822E2E4777E961258AA046.LowUInt16">
+            <summary>
+            Gets the low-order 16-bit unsigned integer from the given 32-bit value.
+            </summary>
+            <value>The low-order 16-bit unsigned integer of the specified value.</value>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$59D1B7AA0B822E2E4777E961258AA046.HighUInt16">
+            <summary>
+            Gets the high-order 16-bit unsigned integer from the given 32-bit value.
+            </summary>
+            <value>The high-order 16-bit unsigned integer of the specified value.</value>
+        </member>
+        <member name="T:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$BA41CFE2B5EDAEB8C1B9062F59ED4D69.&lt;M&gt;$D67DA2CC286EA2FB5F41C0BA3591ADF5">
+            <param name="value">The value to be converted.</param>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$BA41CFE2B5EDAEB8C1B9062F59ED4D69.LowUInt16">
+            <summary>
+            Gets the low-order 16-bit unsigned integer from the given 32-bit value.
+            </summary>
+            <value>The low-order 16-bit unsigned integer of the specified value.</value>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$BA41CFE2B5EDAEB8C1B9062F59ED4D69.HighUInt16">
+            <summary>
+            Gets the high-order 16-bit unsigned integer from the given 32-bit value.
+            </summary>
+            <value>The high-order 16-bit unsigned integer of the specified value.</value>
+        </member>
+        <member name="T:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$CC86B4FD6473E1534D8E28315C194AD4.&lt;M&gt;$33BE01DC9FB5AE0F8C9DAFBCD2BD3757">
+            <param name="value">The value to be converted.</param>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$CC86B4FD6473E1534D8E28315C194AD4.LowUInt32">
+            <summary>
+            Gets the low-order 32-bit unsigned integer from the given 64-bit value.
+            </summary>
+            <value>The low-order 32-bit unsigned integer of the specified value.</value>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$CC86B4FD6473E1534D8E28315C194AD4.HighUInt32">
+            <summary>
+            Gets the high-order 32-bit unsigned integer from the given 64-bit value.
+            </summary>
+            <value>The high-order 32-bit unsigned integer of the specified value.</value>
+        </member>
+        <member name="T:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$E8CA98ACBCAEE63BB261A3FD4AF31675.&lt;M&gt;$536E366C5BD17B0FFE16B368DE84FEDD">
+            <param name="value">The value to be converted.</param>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$E8CA98ACBCAEE63BB261A3FD4AF31675.LowUInt32">
+            <summary>
+            Gets the low-order 32-bit unsigned integer from the given 64-bit value.
+            </summary>
+            <value>The low-order 32-bit unsigned integer of the specified value.</value>
+        </member>
+        <member name="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$E8CA98ACBCAEE63BB261A3FD4AF31675.HighUInt32">
+            <summary>
+            Gets the high-order 32-bit unsigned integer from the given 64-bit value.
+            </summary>
+            <value>The high-order 32-bit unsigned integer of the specified value.</value>
         </member>
     </members>
 </doc>
