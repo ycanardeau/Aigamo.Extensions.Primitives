@@ -149,6 +149,57 @@ public static class BitExtensions
 	}
 
 	/// <summary>
+	/// Creates a 16-bit unsigned integer value by concatenating the specified values.
+	/// </summary>
+	/// <param name="value">The value to be converted.</param>
+	/// <returns>The return value is a 16-bit unsigned integer value.</returns>
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	public static ushort ToUInt16(this (byte Low, byte High) value) =>
+		(ushort)(value.Low | (value.High << 8));
+
+	/// <summary>
+	/// Creates a 16-bit signed integer value by concatenating the specified values.
+	/// </summary>
+	/// <param name="value">The value to be converted.</param>
+	/// <returns>The return value is a 16-bit signed integer value.</returns>
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	public static short ToInt16(this (byte Low, byte High) value) => (short)ToUInt16(value);
+
+	/// <summary>
+	/// Creates a 32-bit unsigned integer value by concatenating the specified values.
+	/// </summary>
+	/// <param name="value">The value to be converted.</param>
+	/// <returns>The return value is a 32-bit unsigned integer value.</returns>
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	public static uint ToUInt32(this (ushort Low, ushort High) value) =>
+		(uint)(value.Low | (value.High << 16));
+
+	/// <summary>
+	/// Creates a 32-bit signed integer value by concatenating the specified values.
+	/// </summary>
+	/// <param name="value">The value to be converted.</param>
+	/// <returns>The return value is a 32-bit signed integer value.</returns>
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	public static int ToInt32(this (ushort Low, ushort High) value) => (int)ToUInt32(value);
+
+	/// <summary>
+	/// Creates a 64-bit unsigned integer value by concatenating the specified values.
+	/// </summary>
+	/// <param name="value">The value to be converted.</param>
+	/// <returns>The return value is a 64-bit unsigned integer value.</returns>
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	public static ulong ToUInt64(this (uint Low, uint High) value) =>
+		value.Low | ((ulong)value.High << 32);
+
+	/// <summary>
+	/// Creates a 64-bit signed integer value by concatenating the specified values.
+	/// </summary>
+	/// <param name="value">The value to be converted.</param>
+	/// <returns>The return value is a 64-bit signed integer value.</returns>
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	public static long ToInt64(this (uint Low, uint High) value) => (long)ToUInt64(value);
+
+	/// <summary>
 	/// Joins two byte values and creates a 16-bit unsigned integer value.
 	/// </summary>
 	/// <param name="value">The higher part value to be joined.</param>
@@ -267,55 +318,4 @@ public static class BitExtensions
 	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static long WithHighUInt32(this long value, uint high) =>
 		(long)WithHighUInt32((ulong)value, high);
-
-	/// <summary>
-	/// Creates a 16-bit unsigned integer value by concatenating the specified values.
-	/// </summary>
-	/// <param name="value">The value to be converted.</param>
-	/// <returns>The return value is a 16-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static ushort ToUInt16(this (byte low, byte high) value) =>
-		(ushort)(value.low | (value.high << 8));
-
-	/// <summary>
-	/// Creates a 16-bit signed integer value by concatenating the specified values.
-	/// </summary>
-	/// <param name="value">The value to be converted.</param>
-	/// <returns>The return value is a 16-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static short ToInt16(this (byte low, byte high) value) => (short)ToUInt16(value);
-
-	/// <summary>
-	/// Creates a 32-bit unsigned integer value by concatenating the specified values.
-	/// </summary>
-	/// <param name="value">The value to be converted.</param>
-	/// <returns>The return value is a 32-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static uint ToUInt32(this (ushort low, ushort high) value) =>
-		(uint)(value.low | (value.high << 16));
-
-	/// <summary>
-	/// Creates a 32-bit signed integer value by concatenating the specified values.
-	/// </summary>
-	/// <param name="value">The value to be converted.</param>
-	/// <returns>The return value is a 32-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static int ToInt32(this (ushort low, ushort high) value) => (int)ToUInt32(value);
-
-	/// <summary>
-	/// Creates a 64-bit unsigned integer value by concatenating the specified values.
-	/// </summary>
-	/// <param name="value">The value to be converted.</param>
-	/// <returns>The return value is a 64-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static ulong ToUInt64(this (uint low, uint high) value) =>
-		value.low | ((ulong)value.high << 32);
-
-	/// <summary>
-	/// Creates a 64-bit signed integer value by concatenating the specified values.
-	/// </summary>
-	/// <param name="value">The value to be converted.</param>
-	/// <returns>The return value is a 64-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining)]
-	public static long ToInt64(this (uint low, uint high) value) => (long)ToUInt64(value);
 }

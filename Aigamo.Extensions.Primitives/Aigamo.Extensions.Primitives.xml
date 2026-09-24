@@ -40,6 +40,48 @@
         <member name="M:Aigamo.Extensions.Primitives.BitExtensions.get_HighUInt32(System.Int64)">
             <inheritdoc cref="P:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$E8CA98ACBCAEE63BB261A3FD4AF31675.HighUInt32"/>
         </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt16(System.ValueTuple{System.Byte,System.Byte})">
+            <summary>
+            Creates a 16-bit unsigned integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 16-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt16(System.ValueTuple{System.Byte,System.Byte})">
+            <summary>
+            Creates a 16-bit signed integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 16-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt32(System.ValueTuple{System.UInt16,System.UInt16})">
+            <summary>
+            Creates a 32-bit unsigned integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 32-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt32(System.ValueTuple{System.UInt16,System.UInt16})">
+            <summary>
+            Creates a 32-bit signed integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 32-bit signed integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt64(System.ValueTuple{System.UInt32,System.UInt32})">
+            <summary>
+            Creates a 64-bit unsigned integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 64-bit unsigned integer value.</returns>
+        </member>
+        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt64(System.ValueTuple{System.UInt32,System.UInt32})">
+            <summary>
+            Creates a 64-bit signed integer value by concatenating the specified values.
+            </summary>
+            <param name="value">The value to be converted.</param>
+            <returns>The return value is a 64-bit signed integer value.</returns>
+        </member>
         <member name="M:Aigamo.Extensions.Primitives.BitExtensions.WithLowByte(System.UInt16,System.Byte)">
             <summary>
             Joins two byte values and creates a 16-bit unsigned integer value.
@@ -135,48 +177,6 @@
             <param name="value">The lower part value to be joined.</param>
             <param name="high">The higher part value to be joined.</param>
             <returns>return value is a 64-bit signed integer value.</returns>
-        </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt16(System.ValueTuple{System.Byte,System.Byte})">
-            <summary>
-            Creates a 16-bit unsigned integer value by concatenating the specified values.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is a 16-bit unsigned integer value.</returns>
-        </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt16(System.ValueTuple{System.Byte,System.Byte})">
-            <summary>
-            Creates a 16-bit signed integer value by concatenating the specified values.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is a 16-bit signed integer value.</returns>
-        </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt32(System.ValueTuple{System.UInt16,System.UInt16})">
-            <summary>
-            Creates a 32-bit unsigned integer value by concatenating the specified values.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is a 32-bit unsigned integer value.</returns>
-        </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt32(System.ValueTuple{System.UInt16,System.UInt16})">
-            <summary>
-            Creates a 32-bit signed integer value by concatenating the specified values.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is a 32-bit signed integer value.</returns>
-        </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToUInt64(System.ValueTuple{System.UInt32,System.UInt32})">
-            <summary>
-            Creates a 64-bit unsigned integer value by concatenating the specified values.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is a 64-bit unsigned integer value.</returns>
-        </member>
-        <member name="M:Aigamo.Extensions.Primitives.BitExtensions.ToInt64(System.ValueTuple{System.UInt32,System.UInt32})">
-            <summary>
-            Creates a 64-bit signed integer value by concatenating the specified values.
-            </summary>
-            <param name="value">The value to be converted.</param>
-            <returns>The return value is a 64-bit signed integer value.</returns>
         </member>
         <member name="T:Aigamo.Extensions.Primitives.BitExtensions.&lt;G&gt;$B7387B77E15A9DBF0D30EA969A07D0DD.&lt;M&gt;$B9BA073A668F04D5183D178A5F8E4B94">
             <param name="value">The value to be converted.</param>

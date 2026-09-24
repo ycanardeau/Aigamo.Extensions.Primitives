@@ -59,13 +59,13 @@ uint a = value.WithLowUInt16(0xABCD);  // 0x1234ABCD
 uint b = value.WithHighUInt16(0xABCD); // 0xABCD5678
 ```
 
-### Joining: `To*` (extension methods on `(low, high)` tuples)
+### Joining: `To*` (extension methods on `(Low, High)` tuples)
 
 | Receiver | Methods |
 | --- | --- |
-| `(byte low, byte high)` | `ToUInt16`, `ToInt16` |
-| `(ushort low, ushort high)` | `ToUInt32`, `ToInt32` |
-| `(uint low, uint high)` | `ToUInt64`, `ToInt64` |
+| `(byte Low, byte High)` | `ToUInt16`, `ToInt16` |
+| `(ushort Low, ushort High)` | `ToUInt32`, `ToInt32` |
+| `(uint Low, uint High)` | `ToUInt64`, `ToInt64` |
 
 ```csharp
 uint low = 0x9ABCDEF0;
