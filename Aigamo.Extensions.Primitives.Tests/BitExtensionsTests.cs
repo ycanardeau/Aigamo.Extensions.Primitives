@@ -31,7 +31,11 @@ public class BitExtensionsTests
 	[InlineData(0x_12345678_9ABCDEF0, 0x9ABCDEF0)]
 	[InlineData(0x_0FEDCBA9_87654321, 0x87654321)]
 	[InlineData(0x_FFFFFFFF_FFFFFFFF, 0xFFFFFFFF)]
-	[InlineData(1979205471486323557L/*0x_1B778CE3_D973AB65*/, 0xD973AB65)]
+	[InlineData(
+		1979205471486323557L /*0x_1B778CE3_D973AB65*/
+		,
+		0xD973AB65
+	)]
 	public void LowUInt32(ulong value, uint expected)
 	{
 		Assert.Equal(expected, value.LowUInt32());
@@ -65,7 +69,11 @@ public class BitExtensionsTests
 	[InlineData(0x_12345678_9ABCDEF0, 0x12345678)]
 	[InlineData(0x_0FEDCBA9_87654321, 0x0FEDCBA9)]
 	[InlineData(0x_FFFFFFFF_FFFFFFFF, 0xFFFFFFFF)]
-	[InlineData(1979205471486323557L/*0x_1B778CE3_D973AB65*/, 0x1B778CE3)]
+	[InlineData(
+		1979205471486323557L /*0x_1B778CE3_D973AB65*/
+		,
+		0x1B778CE3
+	)]
 	public void HighUInt32(ulong value, uint expected)
 	{
 		Assert.Equal(expected, value.HighUInt32());
@@ -150,7 +158,10 @@ public class BitExtensionsTests
 		Assert.Equal(expected, (expected.LowByte(), expected.HighByte()).ToUInt16());
 
 		Assert.Equal((short)expected, (low, high).ToInt16());
-		Assert.Equal((short)expected, (((short)expected).LowByte(), ((short)expected).HighByte()).ToInt16());
+		Assert.Equal(
+			(short)expected,
+			(((short)expected).LowByte(), ((short)expected).HighByte()).ToInt16()
+		);
 	}
 
 	[Theory]
@@ -165,7 +176,10 @@ public class BitExtensionsTests
 		Assert.Equal(expected, (expected.LowUInt16(), expected.HighUInt16()).ToUInt32());
 
 		Assert.Equal((int)expected, (low, high).ToInt32());
-		Assert.Equal((int)expected, (((int)expected).LowUInt16(), ((int)expected).HighUInt16()).ToInt32());
+		Assert.Equal(
+			(int)expected,
+			(((int)expected).LowUInt16(), ((int)expected).HighUInt16()).ToInt32()
+		);
 	}
 
 	[Theory]
@@ -174,13 +188,20 @@ public class BitExtensionsTests
 	[InlineData(uint.MinValue, uint.MaxValue, 0x_FFFFFFFF_00000000)]
 	[InlineData(uint.MaxValue, uint.MaxValue, 0x_FFFFFFFF_FFFFFFFF)]
 	[InlineData(0x9ABCDEF0, 0x12345678, 0x123456789ABCDEF0)]
-	[InlineData(0xD973AB65, 0x1B778CE3, 1979205471486323557L/*0x_1B778CE3_D973AB65*/)]
+	[InlineData(
+		0xD973AB65,
+		0x1B778CE3,
+		1979205471486323557L /*0x_1B778CE3_D973AB65*/
+	)]
 	public void ToUInt64(uint low, uint high, ulong expected)
 	{
 		Assert.Equal(expected, (low, high).ToUInt64());
 		Assert.Equal(expected, (expected.LowUInt32(), expected.HighUInt32()).ToUInt64());
 
 		Assert.Equal((long)expected, (low, high).ToInt64());
-		Assert.Equal((long)expected, (((long)expected).LowUInt32(), ((long)expected).HighUInt32()).ToInt64());
+		Assert.Equal(
+			(long)expected,
+			(((long)expected).LowUInt32(), ((long)expected).HighUInt32()).ToInt64()
+		);
 	}
 }

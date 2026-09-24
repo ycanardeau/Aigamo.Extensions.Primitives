@@ -1,25 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<Nullable>enable</Nullable>
+		<Authors>ycanardeau</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</RepositoryUrl>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Description>Aigamo.Extensions.Primitives.BitExtensions</Description>
+		<Version>1.1.0</Version>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <LangVersion>preview</LangVersion>
-    <Nullable>enable</Nullable>
-    <Authors>ycanardeau</Authors>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/ycanardeau/Aigamo.Extensions.Primitives</RepositoryUrl>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>Aigamo.Extensions.Primitives.BitExtensions</Description>
-    <Version>1.1.0</Version>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>Aigamo.Extensions.Primitives.xml</DocumentationFile>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Aigamo.Extensions.Primitives.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>Aigamo.Extensions.Primitives.xml</DocumentationFile>
-  </PropertyGroup>
-
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>Aigamo.Extensions.Primitives.xml</DocumentationFile>
+	</PropertyGroup>
 </Project>
