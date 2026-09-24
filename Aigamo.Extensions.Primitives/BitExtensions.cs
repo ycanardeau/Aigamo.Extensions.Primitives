@@ -13,9 +13,7 @@ public static class BitExtensions
 		/// <value>The low-order byte of the specified value.</value>
 		public byte LowByte
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => (byte)value;
 		}
 
@@ -25,9 +23,7 @@ public static class BitExtensions
 		/// <value>The high-order byte of the specified value.</value>
 		public byte HighByte
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => (byte)(value >> 8);
 		}
 	}
@@ -41,9 +37,7 @@ public static class BitExtensions
 		/// <value>The low-order byte of the specified value.</value>
 		public byte LowByte
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => ((ushort)value).LowByte;
 		}
 
@@ -53,9 +47,7 @@ public static class BitExtensions
 		/// <value>The high-order byte of the specified value.</value>
 		public byte HighByte
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => ((ushort)value).HighByte;
 		}
 	}
@@ -69,9 +61,7 @@ public static class BitExtensions
 		/// <value>The low-order 16-bit unsigned integer of the specified value.</value>
 		public ushort LowUInt16
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => (ushort)value;
 		}
 
@@ -81,9 +71,7 @@ public static class BitExtensions
 		/// <value>The high-order 16-bit unsigned integer of the specified value.</value>
 		public ushort HighUInt16
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => (ushort)(value >> 16);
 		}
 	}
@@ -97,9 +85,7 @@ public static class BitExtensions
 		/// <value>The low-order 16-bit unsigned integer of the specified value.</value>
 		public ushort LowUInt16
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => ((uint)value).LowUInt16;
 		}
 
@@ -109,9 +95,7 @@ public static class BitExtensions
 		/// <value>The high-order 16-bit unsigned integer of the specified value.</value>
 		public ushort HighUInt16
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => ((uint)value).HighUInt16;
 		}
 	}
@@ -125,9 +109,7 @@ public static class BitExtensions
 		/// <value>The low-order 32-bit unsigned integer of the specified value.</value>
 		public uint LowUInt32
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => (uint)value;
 		}
 
@@ -137,9 +119,7 @@ public static class BitExtensions
 		/// <value>The high-order 32-bit unsigned integer of the specified value.</value>
 		public uint HighUInt32
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => (uint)(value >> 32);
 		}
 	}
@@ -153,9 +133,7 @@ public static class BitExtensions
 		/// <value>The low-order 32-bit unsigned integer of the specified value.</value>
 		public uint LowUInt32
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => ((ulong)value).LowUInt32;
 		}
 
@@ -165,9 +143,7 @@ public static class BitExtensions
 		/// <value>The high-order 32-bit unsigned integer of the specified value.</value>
 		public uint HighUInt32
 		{
-			[MethodImpl(
-				MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization
-			)]
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			get => ((ulong)value).HighUInt32;
 		}
 	}
@@ -178,7 +154,7 @@ public static class BitExtensions
 	/// <param name="value">The higher part value to be joined.</param>
 	/// <param name="low">The lower part value to be joined.</param>
 	/// <returns>return value is a 16-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static ushort WithLowByte(this ushort value, byte low) =>
 		(low, value.HighByte).ToUInt16();
 
@@ -188,7 +164,7 @@ public static class BitExtensions
 	/// <param name="value">The higher part value to be joined.</param>
 	/// <param name="low">The lower part value to be joined.</param>
 	/// <returns>return value is a 16-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static short WithLowByte(this short value, byte low) =>
 		(short)WithLowByte((ushort)value, low);
 
@@ -198,7 +174,7 @@ public static class BitExtensions
 	/// <param name="value">The higher part value to be joined.</param>
 	/// <param name="low">The lower part value to be joined.</param>
 	/// <returns>return value is a 32-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static uint WithLowUInt16(this uint value, ushort low) =>
 		(low, value.HighUInt16).ToUInt32();
 
@@ -208,7 +184,7 @@ public static class BitExtensions
 	/// <param name="value">The higher part value to be joined.</param>
 	/// <param name="low">The lower part value to be joined.</param>
 	/// <returns>return value is a 32-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static int WithLowUInt16(this int value, ushort low) =>
 		(int)WithLowUInt16((uint)value, low);
 
@@ -218,7 +194,7 @@ public static class BitExtensions
 	/// <param name="value">The higher part value to be joined.</param>
 	/// <param name="low">The lower part value to be joined.</param>
 	/// <returns>return value is a 64-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static ulong WithLowUInt32(this ulong value, uint low) =>
 		(low, value.HighUInt32).ToUInt64();
 
@@ -228,7 +204,7 @@ public static class BitExtensions
 	/// <param name="value">The higher part value to be joined.</param>
 	/// <param name="low">The lower part value to be joined.</param>
 	/// <returns>return value is a 64-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static long WithLowUInt32(this long value, uint low) =>
 		(long)WithLowUInt32((ulong)value, low);
 
@@ -238,7 +214,7 @@ public static class BitExtensions
 	/// <param name="value">The lower part value to be joined.</param>
 	/// <param name="high">The higher part value to be joined.</param>
 	/// <returns>return value is a 16-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static ushort WithHighByte(this ushort value, byte high) =>
 		(value.LowByte, high).ToUInt16();
 
@@ -248,7 +224,7 @@ public static class BitExtensions
 	/// <param name="value">The lower part value to be joined.</param>
 	/// <param name="high">The higher part value to be joined.</param>
 	/// <returns>return value is a 16-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static short WithHighByte(this short value, byte high) =>
 		(short)WithHighByte((ushort)value, high);
 
@@ -258,7 +234,7 @@ public static class BitExtensions
 	/// <param name="value">The lower part value to be joined.</param>
 	/// <param name="high">The higher part value to be joined.</param>
 	/// <returns>return value is a 32-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static uint WithHighUInt16(this uint value, ushort high) =>
 		(value.LowUInt16, high).ToUInt32();
 
@@ -268,7 +244,7 @@ public static class BitExtensions
 	/// <param name="value">The lower part value to be joined.</param>
 	/// <param name="high">The higher part value to be joined.</param>
 	/// <returns>return value is a 32-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static int WithHighUInt16(this int value, ushort high) =>
 		(int)WithHighUInt16((uint)value, high);
 
@@ -278,7 +254,7 @@ public static class BitExtensions
 	/// <param name="value">The lower part value to be joined.</param>
 	/// <param name="high">The higher part value to be joined.</param>
 	/// <returns>return value is a 64-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static ulong WithHighUInt32(this ulong value, uint high) =>
 		(value.LowUInt32, high).ToUInt64();
 
@@ -288,7 +264,7 @@ public static class BitExtensions
 	/// <param name="value">The lower part value to be joined.</param>
 	/// <param name="high">The higher part value to be joined.</param>
 	/// <returns>return value is a 64-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static long WithHighUInt32(this long value, uint high) =>
 		(long)WithHighUInt32((ulong)value, high);
 
@@ -297,7 +273,7 @@ public static class BitExtensions
 	/// </summary>
 	/// <param name="value">The value to be converted.</param>
 	/// <returns>The return value is a 16-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static ushort ToUInt16(this (byte low, byte high) value) =>
 		(ushort)(value.low | (value.high << 8));
 
@@ -306,7 +282,7 @@ public static class BitExtensions
 	/// </summary>
 	/// <param name="value">The value to be converted.</param>
 	/// <returns>The return value is a 16-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static short ToInt16(this (byte low, byte high) value) => (short)ToUInt16(value);
 
 	/// <summary>
@@ -314,7 +290,7 @@ public static class BitExtensions
 	/// </summary>
 	/// <param name="value">The value to be converted.</param>
 	/// <returns>The return value is a 32-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static uint ToUInt32(this (ushort low, ushort high) value) =>
 		(uint)(value.low | (value.high << 16));
 
@@ -323,7 +299,7 @@ public static class BitExtensions
 	/// </summary>
 	/// <param name="value">The value to be converted.</param>
 	/// <returns>The return value is a 32-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static int ToInt32(this (ushort low, ushort high) value) => (int)ToUInt32(value);
 
 	/// <summary>
@@ -331,7 +307,7 @@ public static class BitExtensions
 	/// </summary>
 	/// <param name="value">The value to be converted.</param>
 	/// <returns>The return value is a 64-bit unsigned integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static ulong ToUInt64(this (uint low, uint high) value) =>
 		value.low | ((ulong)value.high << 32);
 
@@ -340,6 +316,6 @@ public static class BitExtensions
 	/// </summary>
 	/// <param name="value">The value to be converted.</param>
 	/// <returns>The return value is a 64-bit signed integer value.</returns>
-	[MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static long ToInt64(this (uint low, uint high) value) => (long)ToUInt64(value);
 }
